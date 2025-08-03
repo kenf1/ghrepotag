@@ -5,9 +5,16 @@ inputs:
   org:
     description: "Name of GitHub user or organization"
     required: true
+    type: string
   repo:
     description: "Name of GitHub repository"
     required: true
+    type: string
+
+outputs:
+  latest-sha:
+    description: "The latest commit SHA"
+    type: string
 
 runs:
   using: node20

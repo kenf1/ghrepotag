@@ -9,10 +9,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }

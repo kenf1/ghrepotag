@@ -1,3 +1,3 @@
-import { mainWrapper } from "./wrapper.ts";
+import { parseActionParams } from "./ghaction/logic";
 
-mainWrapper("neovim", "neovim");
+parseActionParams();
