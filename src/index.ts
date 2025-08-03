@@ -1,3 +1,6 @@
 import { parseActionParams } from "./ghaction/logic";
 
-parseActionParams();
+parseActionParams().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

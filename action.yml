@@ -15,7 +15,6 @@ outputs:
   latest-sha:
     description: "The latest commit SHA"
     value: ${{ steps.step_id.outputs.latest-sha }}
-    type: string
 
 runs:
   using: node20

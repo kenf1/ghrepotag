@@ -1,7 +1,7 @@
-import { RequestModel } from "./models/request.ts";
-import { AllTags } from "./models/response.ts";
-import { fetchReleaseTags, getLatestSHA } from "./query/get.ts";
-import { createFullUrl } from "./query/setup.ts";
+import { RequestModel } from "./models/request";
+import { AllTags } from "./models/response";
+import { fetchReleaseTags, getLatestSHA } from "./query/get";
+import { createFullUrl } from "./query/setup";
 
 export async function queryWrapper(
   orgName: string,

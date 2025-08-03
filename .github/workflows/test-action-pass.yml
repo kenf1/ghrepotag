@@ -1,4 +1,4 @@
-name: Test-pass
+name: Local test
 
 on:
   workflow_dispatch:
@@ -19,9 +19,11 @@ jobs:
 
       - name: Build action
         run: |
+          npm ci
           npm run build
 
-      - uses: ./src
+      - id: run_action
+        uses: ./
         with:
           org: "neovim"
           repo: "neovim"
