@@ -1,3 +1,4 @@
+//wrapper function to check required params
 function validateParam(
   param: string | null | undefined,
   name: string,
@@ -12,12 +13,12 @@ function validateParam(
 export function createFullUrl(
   orgName: string | null | undefined,
   repoName: string | null | undefined,
-): string | Error {
+): string {
   const orgNameError = validateParam(orgName, "orgName");
-  if (orgNameError) return orgNameError;
+  if (orgNameError) throw orgNameError;
 
   const repoNameError = validateParam(repoName, "repoName");
-  if (repoNameError) return repoNameError;
+  if (repoNameError) throw repoNameError;
 
   return `https://api.github.com/repos/${orgName}/${repoName}/tags`;
 }
