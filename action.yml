@@ -1,5 +1,9 @@
-name: Repotag
+name: ghrepotag
 description: Get commit SHA for a GitHub repo's latest release tag
+
+branding:
+  icon: "activity"
+  color: "green"
 
 inputs:
   org:
