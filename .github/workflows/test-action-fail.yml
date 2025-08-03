@@ -1,0 +1,30 @@
+name: Test-fail
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - test
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Build action
+        run: |
+          npm run build
+
+      - uses: ./src
+        with:
+          org: "neovim"
+          repo: "nv" #repo DNE
+
+      - name: Print latest-sha output
+        run: echo "Latest SHA is ${{ steps.run_action.outputs.latest-sha }}"

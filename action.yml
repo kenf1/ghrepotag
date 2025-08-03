@@ -1,0 +1,22 @@
+name: Repotag
+description: Get commit SHA for a GitHub repo's latest release tag
+
+inputs:
+  org:
+    description: "Name of GitHub user or organization"
+    required: true
+    type: string
+  repo:
+    description: "Name of GitHub repository"
+    required: true
+    type: string
+
+outputs:
+  latest-sha:
+    description: "The latest commit SHA"
+    value: ${{ steps.step_id.outputs.latest-sha }}
+    type: string
+
+runs:
+  using: node20
+  main: dist/index.js
