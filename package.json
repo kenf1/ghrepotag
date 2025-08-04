@@ -1,9 +1,9 @@
 {
-  "name": "repotag",
+  "name": "ghrepotag",
   "version": "0.1.0",
   "description": "",
   "license": "GPL-3.0-only",
-  "author": "",
+  "author": "github.com/kenf1",
   "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
