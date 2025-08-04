@@ -23,5 +23,6 @@ test("createFullUrl throws error if repoName is null or empty", () => {
 
 test("createFullUrl returns correct URL for valid inputs", () => {
   const url = createFullUrl("org", "repo");
+
   assert.strictEqual(url, "https://api.github.com/repos/org/repo/tags");
 });
