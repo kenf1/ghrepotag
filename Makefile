@@ -1,4 +1,4 @@
-.PHONY: fmt clean ri
+.PHONY: fmt clean ri test
 
 fmt: #Format
 	npx prettier . --write
@@ -9,3 +9,6 @@ clean: fmt #Tidy repo
 
 ri: fmt #Run index.ts as script
 	ts-node src/index.ts
+
+test: #Run all tests
+	npx node --import tsx --test "tests/*.ts"

@@ -2,7 +2,9 @@ import { RequestModel } from "../models/request";
 import { AllTags } from "../models/response";
 
 //add header + user agent if available
-function appendHeaders(requestModel: RequestModel): Record<string, string> {
+export function appendHeaders(
+  requestModel: RequestModel,
+): Record<string, string> {
   const headers: Record<string, string> = {};
 
   if (requestModel.header) {
