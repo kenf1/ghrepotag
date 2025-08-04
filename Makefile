@@ -11,4 +11,4 @@ ri: fmt #Run index.ts as script
 	ts-node src/index.ts
 
 test: #Run all tests
-	npx node --import tsx --test "tests/*.ts"
+	node --import tsx --test './tests/**/*.ts'
