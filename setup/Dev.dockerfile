@@ -1,4 +1,4 @@
-FROM node:24.4.1-slim
+FROM node:24.5.0-slim
 
 RUN apt-get update && apt-get install -y git make
 RUN npm install -g --unsafe-perm typescript ts-node
