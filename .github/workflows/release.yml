@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build # this should output to dist/
+        run: npm run build #should output to dist/
 
       - name: Create release
         id: create_release
