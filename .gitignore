@@ -46,3 +46,5 @@ EOL
 
 #Misc
 Dev/
+.devcontainer
+setup/
