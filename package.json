@@ -11,7 +11,7 @@
     "test": "node --import tsx --test 'tests/**/*.ts'"
   },
   "dependencies": {
-    "@actions/core": "^2.0.1"
+    "@actions/core": "^3.0.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.4",
